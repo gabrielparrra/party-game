@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo de Missões</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Jogo de Missões</h1>
+    <div id="nickname-screen">
+      <input type="text" id="nickname-input" placeholder="Digite seu nickname">
+      <button id="start-button">Começar</button>
+    </div>
+    <div id="game-screen" class="hidden">
+      <h2>Bem-vindo, <span id="player-nickname"></span>!</h2>
+      <h3>Suas Missões:</h3>
+      <ul id="missions-list"></ul>
+      <h3>Pontuação: <span id="score">0</span> pontos</h3>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

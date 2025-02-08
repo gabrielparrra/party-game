@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+  font-family: 'Montserrat', Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  overflow-x: auto;
+}
+
+.hidden {
+  display: none;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+#missions-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+#missions-list li {
+  background-color: #f8f9fa;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#missions-list li button {
+  background-color: #007bff;
+  padding: 5px 10px;
+  font-size: 12px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+#missions-list li button:hover {
+  background-color: #0056b3;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+  .container {
+    padding: 15px;
+  }
+
+  button {
+    padding: 10px;
+  }
+
+  #missions-list li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #missions-list li button {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  input, button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  #missions-list li {
+    padding: 8px;
+  }
+
+  #missions-list li button {
+    font-size: 10px;
+    padding: 5px;
+  }
+}
+
+@media (max-width: 320px) {
+  body {
+    padding: 5px;
+  }
+
+  .container {
+    padding: 5px;
+  }
+
+  input, button {
+    font-size: 12px;
+    padding: 6px;
+  }
+
+  #missions-list li {
+    padding: 6px;
+  }
+
+  #missions-list li button {
+    font-size: 8px;
+    padding: 4px;
+  }
+}
